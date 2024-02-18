@@ -21,10 +21,10 @@ AutoDownloadSorter is a Python script that monitors a specified download directo
 ```
 
 
-2. **Configure the Script**: Open `AutoClassifyDownloads.py` in a text editor and update the `dirDownloads` variable with the path to your download directory. You can also modify the `extensions` dictionary to customize file type classifications.
+2. **Configure the Script**: Open `AutoDownloadsSorter.py` in a text editor and update the `dirDownloads` variable with the path to your download directory. You can also modify the `extensions` dictionary to customize file type classifications.
 3. **Run the Script**: Execute the Python script using the following command:
 ```bash
-  python AutoClassifyDownloads.py
+  python AutoDownloadsSorter.py
 ```
 
 ## Screenshots
