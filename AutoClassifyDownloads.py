@@ -13,6 +13,7 @@ extensions = {
     "pdf" : "PDFs",
     "png" : "Images",
     "mp4" : "Videos",
+    "wmv" : "Videos",
     "mp3" : "Audios",
     "exe" : "Applications(exe)"
 }
@@ -24,10 +25,10 @@ def classifyAndMove(fileName):
 
     if extension in extensions:
         folder = os.path.join(dirDownloads, extensions[extension]) 
-        os.makedirs(folder, exist_ok=True) #create destination folder if not exist
+        os.makedirs(folder, exist_ok=True) # create destination folder if not exist
         shutil.move(os.path.join(dirDownloads, fileName), os.path.join(folder, fileName))
         
-        print(f"Moved {fileName} to {folder}") # print a message for confirmation
+        print(f"Move {fileName} to {folder}") # print a message for confirmation
 
 # Monitoring Downloads Directory
 def monitorDownloadsDir():
